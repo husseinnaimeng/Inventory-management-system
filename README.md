@@ -47,19 +47,22 @@ Installation
 
     Clone the repository:
 
-    bash
+```bash
 
 git clone https://github.com/husseinnaimeng/Inventory-management-system.git
-cd inventory-management-system
 
+cd inventory-management-system
+```
 Create a virtual environment:
+
 
 ```bash
 python3 -m venv env
 source env/bin/activate
 
-Install dependencies:
 ```
+Install dependencies:
+
 ```bash
 
 pip install -r requirements.txt
