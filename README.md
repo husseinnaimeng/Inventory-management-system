@@ -49,7 +49,7 @@ Installation
 
     bash
 
-git clone https://github.com/yourusername/inventory-management-system.git
+git clone https://github.com/husseinnaimeeng/Inventory-management-system.git
 cd inventory-management-system
 
 Create a virtual environment:
