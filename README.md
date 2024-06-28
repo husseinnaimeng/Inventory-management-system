@@ -64,25 +64,26 @@ Install dependencies:
 
 pip install -r requirements.txt
 
-Apply migrations:
 
 ```
+Apply migrations:
 
 ```bash
 
 python manage.py migrate
 
-Create a superuser:
 
 ```
+Create a superuser:
 
 ```bash
 
 python manage.py createsuperuser
 
-Run the development server:
 
 ```
+Run the development server:
+
 ```bash
 
 python manage.py runserver
