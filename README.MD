@@ -38,6 +38,11 @@ Features
         User authentication and authorization.
         Protection against CSRF, XSS, and SQL injection attacks.
 
+
+Problems and basic data strcture implementation
+
+- [Mutiply Product Types](./inventory/Multiple%20Product%20Type.md)
+
 Installation
 
     Clone the repository:
