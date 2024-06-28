@@ -4,7 +4,7 @@ class OrderItem(models.Model):
     
     product  = models.ForeignKey('inventory.Product',on_delete=models.SET_NULL,null=True)
     customer = models.ForeignKey('customer.Customer',on_delete=models.SET_NULL,null=True,related_name='customer_order_item',blank=True)
-    quantity = models.PositiveIntegerField(default=1,max_length=6)
+    quantity = models.PositiveIntegerField(default=1)
     price    = models.DecimalField(max_digits=10,decimal_places=3,blank=True,null=True)
     def total(self):
         if self.price is not None:
