@@ -48,21 +48,16 @@ class TypeVariationManager(models.Manager):
         return None
 
     def attributes_must_have(self,attributes: dict):
-        must_have = ['quantity']
+        must_have = ['quantity','price','field_type']
         
-        for key,value in attributes.items():
-            
-            if key in must_have:
-                continue
-            
-            else:
-                return {'pass':False,'error_message':f"Attributes must have one of these keys ({must_have})  "}
-        
+        for key in must_have:
+            if not attributes.get(key,None):
+                
+                return {'pass':False,'error_message':f'The attributes field must have the key {key}  '}
+                        
         
         return {'pass':True}
                 
-        
-
     def valid_attributes(self,attributes) -> bool:
         
         response = {"is_valid":False}

@@ -50,4 +50,12 @@ class ListCreateTypeVariationAPIView(ListCreateAPIView):
             return Response(attributes.data,status=status.HTTP_400_BAD_REQUEST)
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class ListCreateProductAPIView(ListCreateAPIView):
     
+    permission_classes = [IsAdminUser]
+    serializer_class = serializers.ProductSerializer
+    queryset = models.Product.objects.all()
+    
+

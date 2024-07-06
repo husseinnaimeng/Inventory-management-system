@@ -46,6 +46,9 @@ class Product(models.Model):
     manufacture = models.ForeignKey("Manufacture",on_delete=models.SET_NULL,null=True,blank=True)
     
     
+    def __str__(self):
+        
+        return self.name
     
     def profit_margin(self):
         
